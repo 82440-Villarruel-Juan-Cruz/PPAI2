@@ -170,6 +170,7 @@ public class GestorAdmMantenimiento
         tabla.Columns.Add("Estado");
         RecursoTecnologico rt = RTselecccionado;
         tabla.Rows.Add(rt.getTiponombre(), rt.getNumeroRT(), rt.getMarca(), rt.getModelo(), rt.getEstado());
+        //Aca enrealidad deberiamos ver de "Tomar seleccion de envio"
         enviarNotificacionViaMail();
         return tabla;
 
@@ -185,6 +186,12 @@ public class GestorAdmMantenimiento
     }
 
 
+    /// <summary>
+    /// La funcion envia tiene pre setteado el mail origen, credenciales y los puertos de envio, ademas el cuerpo por defecto
+    /// y el asunto.
+    /// 
+    /// Es llamada por las opcion de notificaciones al personal cientifico. NO REQUIERE PARAMETROS
+    /// </summary>
     public void enviarNotificacionViaMail()
     {
         SmtpClient cliente = new SmtpClient()

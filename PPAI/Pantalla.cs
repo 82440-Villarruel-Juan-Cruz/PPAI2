@@ -143,9 +143,11 @@ namespace PPAI
 
             if (chkHumo.Checked)
             {
-                pictureBox1.Visible = true;
-                pictureBox1.Image = Image.FromFile(@"D:\Juan\Facultad\OneDrive\DSI\C#\PPAI\PPAI\Resources\Vsib.gif");
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                Form fm = new SeñalHumo();
+                fm.ShowDialog();
+            //    pictureBox1.Visible = true;
+            //    pictureBox1.Image = Image.FromFile(@"D:\Juan\Facultad\OneDrive\DSI\C#\PPAI\PPAI\Resources\Vsib.gif");
+            //    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
             if (chkEmail.Checked)
