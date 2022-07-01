@@ -19,7 +19,7 @@ namespace PPAI.Clases
         public void MandarMensaje(string texto)
         {
             var accountSid = "ACc5d88ac6f6936a6d43b6174cf9a2304f";
-            var authToken = "8a0f69743a97cdb4602c734176adff45";
+            var authToken = "d67323562f0a968f714d3e73465089db";
             TwilioClient.Init(accountSid, authToken);
 
             var messageOptions = new CreateMessageOptions(

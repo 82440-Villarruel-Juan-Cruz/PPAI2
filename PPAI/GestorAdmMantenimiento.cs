@@ -171,7 +171,6 @@ public class GestorAdmMantenimiento
         RecursoTecnologico rt = RTselecccionado;
         tabla.Rows.Add(rt.getTiponombre(), rt.getNumeroRT(), rt.getMarca(), rt.getModelo(), rt.getEstado());
         //Aca enrealidad deberiamos ver de "Tomar seleccion de envio"
-        enviarNotificacionViaMail();
         return tabla;
 
     }
@@ -243,7 +242,7 @@ public class GestorAdmMantenimiento
         mailMessage.To.Add(Para4);/*
         mailMessage.To.Add(Para5);
         mailMessage.To.Add(Para6);
-        mailMessage.To.Add(Para7);*/
+     /*   mailMessage.To.Add(Para7);*/
 
         try
         {
